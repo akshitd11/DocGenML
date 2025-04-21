@@ -1,0 +1,13 @@
+pyproject.toml
+docgen/__init__.py
+docgen/cli.py
+docgen/config.py
+docgen/generator.py
+docgen/parser.py
+docgen/summarize.py
+docgen.egg-info/PKG-INFO
+docgen.egg-info/SOURCES.txt
+docgen.egg-info/dependency_links.txt
+docgen.egg-info/entry_points.txt
+docgen.egg-info/requires.txt
+docgen.egg-info/top_level.txt
