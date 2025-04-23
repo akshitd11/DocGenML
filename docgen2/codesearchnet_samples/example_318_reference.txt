@@ -1,0 +1,9 @@
+We need to get the headers in addition to the body answer
+    to get the location from them
+    This function uses jenkins_request method from python-jenkins library
+    with just the return call changed
+
+    :param jenkins_server: The server to query
+    :param req: The request to execute
+    :return: Dict containing the response body (key body)
+        and the headers coming along (headers)

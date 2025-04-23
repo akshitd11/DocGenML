@@ -1,0 +1,11 @@
+Send an email with html content using sendgrid.
+
+    To use this plugin:
+    0. include sendgrid subpackage as part of your Airflow installation, e.g.,
+    pip install 'apache-airflow[sendgrid]'
+    1. update [email] backend in airflow.cfg, i.e.,
+    [email]
+    email_backend = airflow.contrib.utils.sendgrid.send_email
+    2. configure Sendgrid specific environment variables at all Airflow instances:
+    SENDGRID_MAIL_FROM={your-mail-from}
+    SENDGRID_API_KEY={your-sendgrid-api-key}.

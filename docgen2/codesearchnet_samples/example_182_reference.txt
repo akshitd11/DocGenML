@@ -1,0 +1,2 @@
+Send termination signal to DAG parsing processor manager
+        and expect it to terminate all DAG file processors.

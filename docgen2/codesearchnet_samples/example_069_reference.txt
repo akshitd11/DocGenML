@@ -1,0 +1,5 @@
+Checks whether new objects have been uploaded and the inactivity_period
+        has passed and updates the state of the sensor accordingly.
+
+        :param current_num_objects: number of objects in bucket during last poke.
+        :type current_num_objects: int

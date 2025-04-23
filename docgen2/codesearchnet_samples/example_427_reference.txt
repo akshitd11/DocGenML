@@ -1,0 +1,4 @@
+Delete the specified cgroup.
+
+        :param path: The path of the cgroup to delete.
+        E.g. cpu/mygroup/mysubgroup

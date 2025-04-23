@@ -1,0 +1,2 @@
+Inserts a new document (or updates an existing one) into an existing
+        collection in the CosmosDB database.

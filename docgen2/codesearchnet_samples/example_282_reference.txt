@@ -1,0 +1,1 @@
+Creates a new instance of the configured executor if none exists and returns it

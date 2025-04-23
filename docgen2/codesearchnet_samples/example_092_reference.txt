@@ -1,0 +1,3 @@
+Stops running proxy.
+
+        You should stop the proxy after you stop using it.

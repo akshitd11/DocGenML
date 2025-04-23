@@ -1,0 +1,5 @@
+:param file_path: the path to the file that's being processed
+        :type file_path: unicode
+        :return: the PID of the process processing the given file or None if
+            the specified file is not being processed
+        :rtype: int

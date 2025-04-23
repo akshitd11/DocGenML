@@ -1,0 +1,11 @@
+Immediately runs the task (without checking or changing db state
+        before execution) and then sets the appropriate final state after
+        completion and runs any post-execute callbacks. Meant to be called
+        only after another function changes the state to running.
+
+        :param mark_success: Don't run the task, mark its state as success
+        :type mark_success: bool
+        :param test_mode: Doesn't record success or failure in the DB
+        :type test_mode: bool
+        :param pool: specifies the pool to use to run the task instance
+        :type pool: str

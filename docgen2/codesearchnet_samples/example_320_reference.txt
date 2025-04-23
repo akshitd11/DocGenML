@@ -1,0 +1,12 @@
+This method poll the jenkins queue until the job is executed.
+        When we trigger a job through an API call,
+        the job is first put in the queue without having a build number assigned.
+        Thus we have to wait the job exit the queue to know its build number.
+        To do so, we have to add /api/json (or /api/xml) to the location
+        returned by the build_job call and poll this file.
+        When a 'executable' block appears in the json, it means the job execution started
+        and the field 'number' then contains the build number.
+
+        :param location: Location to poll, returned in the header of the build_job call
+        :param jenkins_server: The jenkins server to poll
+        :return: The build_number corresponding to the triggered job

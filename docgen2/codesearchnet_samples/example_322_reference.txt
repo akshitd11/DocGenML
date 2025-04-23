@@ -1,0 +1,4 @@
+Calls callbacks before execution.
+    Note that any exception from callback will be logged but won't be propagated.
+    :param kwargs:
+    :return: None

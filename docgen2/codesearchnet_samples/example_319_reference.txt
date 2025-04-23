@@ -1,0 +1,8 @@
+This function makes an API call to Jenkins to trigger a build for 'job_name'
+        It returned a dict with 2 keys : body and headers.
+        headers contains also a dict-like object which can be queried to get
+        the location to poll in the queue.
+
+        :param jenkins_server: The jenkins server where the job should be triggered
+        :return: Dict containing the response body (key body)
+            and the headers coming along (headers)

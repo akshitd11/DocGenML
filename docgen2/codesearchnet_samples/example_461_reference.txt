@@ -1,0 +1,3 @@
+Send an email with html content
+
+    >>> send_email('test@example.com', 'foo', '<b>Foo</b> bar', ['/dev/null'], dryrun=True)

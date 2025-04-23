@@ -1,0 +1,6 @@
+Run an pig script using the pig cli
+
+        >>> ph = PigCliHook()
+        >>> result = ph.run_cli("ls /;")
+        >>> ("hdfs://" in result)
+        True

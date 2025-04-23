@@ -1,0 +1,1 @@
+Override the scheduler heartbeat to determine when the test is complete

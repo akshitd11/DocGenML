@@ -1,0 +1,1 @@
+Write batch items to dynamodb table with provisioned throughout capacity.

@@ -1,0 +1,2 @@
+Checks on whether the task instance is in the right state and timeframe
+        to be retried.

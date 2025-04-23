@@ -1,0 +1,3 @@
+Parse DAG files in a loop controlled by DagParsingSignal.
+        Actual DAG parsing loop will run once upon receiving one
+        agent heartbeat message and will report done when finished the loop.

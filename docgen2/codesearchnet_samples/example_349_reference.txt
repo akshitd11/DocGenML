@@ -1,0 +1,1 @@
+Forces the task instance's state to FAILED in the database.

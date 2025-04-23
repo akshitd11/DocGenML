@@ -1,0 +1,4 @@
+Returns a JSON with a dag_run's public instance variables.
+    The format for the exec_date is expected to be
+    "YYYY-mm-DDTHH:MM:SS", for example: "2016-11-16T11:34:15". This will
+    of course need to have been encoded for URL in the request.

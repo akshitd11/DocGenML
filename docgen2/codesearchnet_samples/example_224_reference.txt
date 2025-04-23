@@ -1,0 +1,3 @@
+Remove an option if it exists in config from a file or
+        default config. If both of config have the same option, this removes
+        the option in both configs unless remove_default=False.

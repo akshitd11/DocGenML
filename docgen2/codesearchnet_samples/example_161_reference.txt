@@ -1,0 +1,10 @@
+Deletes a Pub/Sub subscription, if it exists.
+
+        :param project: the GCP project ID where the subscription exists
+        :type project: str
+        :param subscription: the Pub/Sub subscription name to delete; do not
+            include the ``projects/{project}/subscriptions/`` prefix.
+        :type subscription: str
+        :param fail_if_not_exists: if set, raise an exception if the topic
+            does not exist
+        :type fail_if_not_exists: bool

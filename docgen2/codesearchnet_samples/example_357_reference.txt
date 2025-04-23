@@ -1,0 +1,2 @@
+Returns a boolean as to whether the slot pool has room for this
+        task to run

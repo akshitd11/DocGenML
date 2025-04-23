@@ -1,0 +1,3 @@
+Walks the tree of loggers and tries to set the context for each handler
+    :param logger: logger
+    :param value: value to set

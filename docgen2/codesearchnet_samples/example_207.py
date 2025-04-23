@@ -1,0 +1,2 @@
+def delete_transfer_job(self, job_name, project_id):
+    return self.get_conn().transferJobs().patch(jobName=job_name, body={PROJECT_ID: project_id, TRANSFER_JOB: {STATUS1: GcpTransferJobsStatus.DELETED}, TRANSFER_JOB_FIELD_MASK: STATUS1}).execute(num_retries=self.num_retries)

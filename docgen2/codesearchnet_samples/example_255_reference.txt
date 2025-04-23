@@ -1,0 +1,3 @@
+Returns a pretty ascii table from tuples
+
+    If namedtuple are used, the table will have headers

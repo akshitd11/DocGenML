@@ -1,0 +1,3 @@
+Opens a ssh connection to the remote host.
+
+        :rtype: paramiko.client.SSHClient

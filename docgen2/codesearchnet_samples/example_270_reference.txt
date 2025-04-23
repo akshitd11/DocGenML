@@ -1,0 +1,31 @@
+Launches a MLEngine job and wait for it to reach a terminal state.
+
+        :param project_id: The Google Cloud project id within which MLEngine
+            job will be launched.
+        :type project_id: str
+
+        :param job: MLEngine Job object that should be provided to the MLEngine
+            API, such as: ::
+
+                {
+                  'jobId': 'my_job_id',
+                  'trainingInput': {
+                    'scaleTier': 'STANDARD_1',
+                    ...
+                  }
+                }
+
+        :type job: dict
+
+        :param use_existing_job_fn: In case that a MLEngine job with the same
+            job_id already exist, this method (if provided) will decide whether
+            we should use this existing job, continue waiting for it to finish
+            and returning the job object. It should accepts a MLEngine job
+            object, and returns a boolean value indicating whether it is OK to
+            reuse the existing job. If 'use_existing_job_fn' is not provided,
+            we by default reuse the existing MLEngine job.
+        :type use_existing_job_fn: function
+
+        :return: The MLEngine job object if the job successfully reach a
+            terminal state (which might be FAILED or CANCELLED state).
+        :rtype: dict

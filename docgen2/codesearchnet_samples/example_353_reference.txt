@@ -1,0 +1,6 @@
+Checks whether the dependents of this task instance have all succeeded.
+        This is meant to be used by wait_for_downstream.
+
+        This is useful when you do not want to start processing the next
+        schedule of a task until the dependents are done. For instance,
+        if the task DROPs and recreates a table.

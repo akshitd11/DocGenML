@@ -1,0 +1,2 @@
+Reloads the current dagrun from the database
+        :param session: database session

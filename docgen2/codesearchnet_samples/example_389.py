@@ -1,0 +1,2 @@
+def load_string(self, string_data, key, bucket_name=None, replace=False, encrypt=False, encoding='utf-8'):
+    self.load_bytes(string_data.encode(encoding), key=key, bucket_name=bucket_name, replace=replace, encrypt=encrypt)

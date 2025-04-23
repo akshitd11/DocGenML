@@ -1,0 +1,15 @@
+Upload a stream to Azure File Share.
+
+        :param stream: Opened file/stream to upload as the file content.
+        :type stream: file-like
+        :param share_name: Name of the share.
+        :type share_name: str
+        :param directory_name: Name of the directory.
+        :type directory_name: str
+        :param file_name: Name of the file.
+        :type file_name: str
+        :param count: Size of the stream in bytes
+        :type count: int
+        :param kwargs: Optional keyword arguments that
+            `FileService.create_file_from_stream()` takes.
+        :type kwargs: object

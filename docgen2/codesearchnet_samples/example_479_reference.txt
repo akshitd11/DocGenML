@@ -1,0 +1,16 @@
+Set the state of a task instance and if needed its relatives. Can set state
+    for future tasks (calculated from execution_date) and retroactively
+    for past tasks. Will verify integrity of past dag runs in order to create
+    tasks that did not exist. It will not create dag runs that are missing
+    on the schedule (but it will as for subdag dag runs if needed).
+    :param task: the task from which to work. task.task.dag needs to be set
+    :param execution_date: the execution date from which to start looking
+    :param upstream: Mark all parents (upstream tasks)
+    :param downstream: Mark all siblings (downstream tasks) of task_id, including SubDags
+    :param future: Mark all future tasks on the interval of the dag up until
+        last execution date.
+    :param past: Retroactively mark all tasks starting from start_date of the DAG
+    :param state: State to which the tasks need to be set
+    :param commit: Commit tasks to be altered to the database
+    :param session: database session
+    :return: list of tasks that have been created and updated

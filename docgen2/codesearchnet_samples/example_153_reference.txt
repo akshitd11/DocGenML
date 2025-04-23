@@ -1,0 +1,9 @@
+Updates Cloud Functions according to the specified update mask.
+
+        :param name: The name of the function.
+        :type name: str
+        :param body: The body required by the cloud function patch API.
+        :type body: dict
+        :param update_mask: The update mask - array of fields that should be patched.
+        :type update_mask: [str]
+        :return: None

@@ -1,0 +1,2 @@
+str->list of str
+        Give you the real URLs.

@@ -1,0 +1,3 @@
+def execute(self, context):
+    self._hook = SparkSqlHook(sql=self._sql, conf=self._conf, conn_id=self._conn_id, total_executor_cores=self._total_executor_cores, executor_cores=self._executor_cores, executor_memory=self._executor_memory, keytab=self._keytab, principal=self._principal, name=self._name, num_executors=self._num_executors, master=self._master, yarn_queue=self._yarn_queue)
+    self._hook.run_query()

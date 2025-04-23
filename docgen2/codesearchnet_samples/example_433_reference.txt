@@ -1,0 +1,8 @@
+Get the description of an object from Salesforce.
+        This description is the object's schema and
+        some extra metadata that Salesforce stores for each object.
+
+        :param obj: The name of the Salesforce object that we are getting a description of.
+        :type obj: str
+        :return: the description of the Salesforce object.
+        :rtype: dict

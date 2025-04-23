@@ -1,0 +1,6 @@
+Check if a file exists on Azure Data Lake.
+
+        :param file_path: Path and name of the file.
+        :type file_path: str
+        :return: True if the file exists, False otherwise.
+        :rtype: bool

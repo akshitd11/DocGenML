@@ -1,0 +1,4 @@
+This function executes the transfer from the email server (via imap) into s3.
+
+        :param context: The context while executing.
+        :type context: dict

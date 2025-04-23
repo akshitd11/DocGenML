@@ -1,0 +1,6 @@
+Creates an Amazon S3 bucket.
+
+        :param bucket_name: The name of the bucket
+        :type bucket_name: str
+        :param region_name: The name of the aws region in which to create the bucket.
+        :type region_name: str

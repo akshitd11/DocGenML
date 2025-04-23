@@ -1,0 +1,6 @@
+Create the specified cgroup.
+
+        :param path: The path of the cgroup to create.
+        E.g. cpu/mygroup/mysubgroup
+        :return: the Node associated with the created cgroup.
+        :rtype: cgroupspy.nodes.Node

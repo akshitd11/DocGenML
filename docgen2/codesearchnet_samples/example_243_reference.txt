@@ -1,0 +1,14 @@
+Classifies a document into categories.
+
+        :param document: Input document.
+            If a dict is provided, it must be of the same form as the protobuf message Document
+        :type document: dict or class google.cloud.language_v1.types.Document
+        :param retry: A retry object used to retry requests. If None is specified, requests will not be
+            retried.
+        :type retry: google.api_core.retry.Retry
+        :param timeout: The amount of time, in seconds, to wait for the request to complete. Note that if
+            retry is specified, the timeout applies to each individual attempt.
+        :type timeout: float
+        :param metadata: Additional metadata that is provided to the method.
+        :type metadata: sequence[tuple[str, str]]]
+        :rtype: google.cloud.language_v1.types.AnalyzeEntitiesResponse

@@ -1,0 +1,2 @@
+Takes a value from MSSQL, and converts it to a value that's safe for
+        JSON/Google Cloud Storage/BigQuery.

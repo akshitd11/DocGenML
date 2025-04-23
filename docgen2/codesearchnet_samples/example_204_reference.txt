@@ -1,0 +1,11 @@
+Gets the latest state of a long-running operation in Google Storage
+        Transfer Service.
+
+        :param job_name: (Required) Name of the job to be fetched
+        :type job_name: str
+        :param project_id: (Optional) the ID of the project that owns the Transfer
+            Job. If set to None or missing, the default project_id from the GCP
+            connection is used.
+        :type project_id: str
+        :return: Transfer Job
+        :rtype: dict

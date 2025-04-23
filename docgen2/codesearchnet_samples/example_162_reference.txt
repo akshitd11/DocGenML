@@ -1,0 +1,18 @@
+Pulls up to ``max_messages`` messages from Pub/Sub subscription.
+
+        :param project: the GCP project ID where the subscription exists
+        :type project: str
+        :param subscription: the Pub/Sub subscription name to pull from; do not
+            include the 'projects/{project}/topics/' prefix.
+        :type subscription: str
+        :param max_messages: The maximum number of messages to return from
+            the Pub/Sub API.
+        :type max_messages: int
+        :param return_immediately: If set, the Pub/Sub API will immediately
+            return if no messages are available. Otherwise, the request will
+            block for an undisclosed, but bounded period of time
+        :type return_immediately: bool
+        :return: A list of Pub/Sub ReceivedMessage objects each containing
+            an ``ackId`` property and a ``message`` property, which includes
+            the base64-encoded message content. See
+            https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions/pull#ReceivedMessage

@@ -1,0 +1,6 @@
+Calls callbacks after execution.
+    As it's being called after execution, it can capture status of execution,
+    duration, etc. Note that any exception from callback will be logged but
+    won't be propagated.
+    :param kwargs:
+    :return: None

@@ -1,0 +1,3 @@
+Returns the state of a DagRun at the command line.
+    >>> airflow dag_state tutorial 2015-01-01T00:00:00.000000
+    running

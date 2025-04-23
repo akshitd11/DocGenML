@@ -1,0 +1,9 @@
+Run a query for entities.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/rest/v1/projects/runQuery
+
+        :param body: the body of the query request.
+        :type body: dict
+        :return: the batch of query results.
+        :rtype: dict

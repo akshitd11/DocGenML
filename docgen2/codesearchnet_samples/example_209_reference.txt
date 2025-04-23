@@ -1,0 +1,8 @@
+Gets an transfer operation in Google Storage Transfer Service.
+
+        :param operation_name: (Required) Name of the transfer operation.
+        :type operation_name: str
+        :return: transfer operation
+            See:
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/Operation
+        :rtype: dict

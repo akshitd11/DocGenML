@@ -1,0 +1,9 @@
+Allocate IDs for incomplete keys.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/rest/v1/projects/allocateIds
+
+        :param partial_keys: a list of partial keys.
+        :type partial_keys: list
+        :return: a list of full keys.
+        :rtype: list

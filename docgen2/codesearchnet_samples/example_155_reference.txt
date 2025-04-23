@@ -1,0 +1,5 @@
+Deletes the specified Cloud Function.
+
+        :param name: The name of the function.
+        :type name: str
+        :return: None

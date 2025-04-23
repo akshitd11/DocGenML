@@ -1,0 +1,22 @@
+Checks dependencies and then sets state to RUNNING if they are met. Returns
+        True if and only if state is set to RUNNING, which implies that task should be
+        executed, in preparation for _run_raw_task
+
+        :param verbose: whether to turn on more verbose logging
+        :type verbose: bool
+        :param ignore_all_deps: Ignore all of the non-critical dependencies, just runs
+        :type ignore_all_deps: bool
+        :param ignore_depends_on_past: Ignore depends_on_past DAG attribute
+        :type ignore_depends_on_past: bool
+        :param ignore_task_deps: Don't check the dependencies of this TI's task
+        :type ignore_task_deps: bool
+        :param ignore_ti_state: Disregards previous task instance state
+        :type ignore_ti_state: bool
+        :param mark_success: Don't run the task, mark its state as success
+        :type mark_success: bool
+        :param test_mode: Doesn't record success or failure in the DB
+        :type test_mode: bool
+        :param pool: specifies the pool to use to run the task instance
+        :type pool: str
+        :return: whether the state was changed to running or not
+        :rtype: bool

@@ -1,0 +1,10 @@
+Get the tail from logs of a container group
+
+        :param resource_group: the name of the resource group
+        :type resource_group: str
+        :param name: the name of the container group
+        :type name: str
+        :param tail: the size of the tail
+        :type tail: int
+        :return: A list of log messages
+        :rtype: list[str]

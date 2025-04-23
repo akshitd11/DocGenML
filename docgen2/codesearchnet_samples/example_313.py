@@ -1,0 +1,2 @@
+def get_previous_dagrun(self, session=None):
+    return session.query(DagRun).filter(DagRun.dag_id == self.dag_id, DagRun.execution_date < self.execution_date).order_by(DagRun.execution_date.desc()).first()

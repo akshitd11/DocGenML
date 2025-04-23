@@ -1,0 +1,1 @@
+Parses some DatabaseError to provide a better error message

@@ -1,0 +1,4 @@
+Retrieves connection to Cloud Translate
+
+        :return: Google Cloud Translate client object.
+        :rtype: Client

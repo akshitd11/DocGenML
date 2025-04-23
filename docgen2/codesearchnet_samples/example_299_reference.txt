@@ -1,0 +1,8 @@
+Create a new container group
+
+        :param resource_group: the name of the resource group
+        :type resource_group: str
+        :param name: the name of the container group
+        :type name: str
+        :param container_group: the properties of the container group
+        :type container_group: azure.mgmt.containerinstance.models.ContainerGroup

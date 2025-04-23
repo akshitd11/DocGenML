@@ -1,0 +1,3 @@
+poke matching files in a directory with self.regex
+
+        :return: Bool depending on the search criteria

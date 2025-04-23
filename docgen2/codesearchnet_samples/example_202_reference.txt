@@ -1,0 +1,10 @@
+Creates a tunnel between two hosts. Like ssh -L <LOCAL_PORT>:host:<REMOTE_PORT>.
+
+        :param remote_port: The remote port to create a tunnel to
+        :type remote_port: int
+        :param remote_host: The remote host to create a tunnel to (default localhost)
+        :type remote_host: str
+        :param local_port:  The local port to attach the tunnel to
+        :type local_port: int
+
+        :return: sshtunnel.SSHTunnelForwarder object

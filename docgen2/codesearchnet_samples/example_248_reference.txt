@@ -1,0 +1,1 @@
+Ensures that certain subfolders of AIRFLOW_HOME are on the classpath

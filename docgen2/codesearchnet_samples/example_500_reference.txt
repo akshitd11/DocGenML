@@ -1,0 +1,2 @@
+Given a Google Cloud Storage URL (gs://<bucket>/<blob>), returns a
+    tuple containing the corresponding bucket and blob.

@@ -1,0 +1,4 @@
+How many Celery tasks should be sent to each worker process.
+
+        :return: Number of tasks that should be used per process
+        :rtype: int

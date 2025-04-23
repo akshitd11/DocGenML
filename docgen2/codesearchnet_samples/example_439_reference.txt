@@ -1,0 +1,3 @@
+Returns the log found at the remote_log_location.
+        :param remote_log_location: the log's location in remote storage
+        :type remote_log_location: str (path)

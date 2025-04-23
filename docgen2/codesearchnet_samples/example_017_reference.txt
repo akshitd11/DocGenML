@@ -1,0 +1,1 @@
+Format text with color or other effects into ANSI escaped string.

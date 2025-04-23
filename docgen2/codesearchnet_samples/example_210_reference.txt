@@ -1,0 +1,13 @@
+Gets an transfer operation in Google Storage Transfer Service.
+
+        :param filter: (Required) A request filter, as described in
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter
+            With one additional improvement:
+
+            * project_id is optional if you have a project id defined
+              in the connection
+              See: :ref:`howto/connection:gcp`
+
+        :type filter: dict
+        :return: transfer operation
+        :rtype: list[dict]

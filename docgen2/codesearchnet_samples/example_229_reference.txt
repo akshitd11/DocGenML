@@ -1,0 +1,9 @@
+Commit a transaction, optionally creating, deleting or modifying some entities.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/rest/v1/projects/commit
+
+        :param body: the body of the commit request.
+        :type body: dict
+        :return: the response body of the commit request.
+        :rtype: dict

@@ -1,0 +1,4 @@
+Returns the datetime with the default timezone added if timezone
+    information was not associated
+    :param value: datetime
+    :return: datetime with tzinfo

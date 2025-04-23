@@ -1,0 +1,7 @@
+:param dag_id: DAG ID
+        :type dag_id: unicode
+        :param execution_date: execution date
+        :type execution_date: datetime
+        :return: DagRun corresponding to the given dag_id and execution date
+            if one exists. None otherwise.
+        :rtype: airflow.models.DagRun

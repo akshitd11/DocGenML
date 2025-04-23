@@ -1,0 +1,7 @@
+Check for message on subscribed channels and write to xcom the message with key ``message``
+
+        An example of message ``{'type': 'message', 'pattern': None, 'channel': b'test', 'data': b'hello'}``
+
+        :param context: the context object
+        :type context: dict
+        :return: ``True`` if message (with type 'message') is available or ``False`` if not

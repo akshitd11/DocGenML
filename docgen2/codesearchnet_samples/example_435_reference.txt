@@ -1,0 +1,12 @@
+Get all instances of the `object` from Salesforce.
+        For each model, only get the fields specified in fields.
+
+        All we really do underneath the hood is run:
+            SELECT <fields> FROM <obj>;
+
+        :param obj: The object name to get from Salesforce.
+        :type obj: str
+        :param fields: The fields to get from the object.
+        :type fields: iterable
+        :return: all instances of the object from Salesforce.
+        :rtype: dict

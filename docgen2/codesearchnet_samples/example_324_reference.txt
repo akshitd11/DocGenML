@@ -1,0 +1,1 @@
+This function decides whether or not to Trigger the remote DAG

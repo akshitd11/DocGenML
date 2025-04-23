@@ -1,0 +1,2 @@
+Harvest DAG parsing results from result queue and sync metadata from stat queue.
+        :return: List of parsing result in SimpleDag format.

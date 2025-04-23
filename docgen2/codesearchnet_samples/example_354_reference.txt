@@ -1,0 +1,12 @@
+Returns whether or not all the conditions are met for this task instance to be run
+        given the context for the dependencies (e.g. a task instance being force run from
+        the UI will ignore some dependencies).
+
+        :param dep_context: The execution context that determines the dependencies that
+            should be evaluated.
+        :type dep_context: DepContext
+        :param session: database session
+        :type session: sqlalchemy.orm.session.Session
+        :param verbose: whether log details on failed dependencies on
+            info or debug log level
+        :type verbose: bool

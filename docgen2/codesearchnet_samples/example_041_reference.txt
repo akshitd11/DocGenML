@@ -1,0 +1,1 @@
+Decompresses data for Content-Encoding: gzip.

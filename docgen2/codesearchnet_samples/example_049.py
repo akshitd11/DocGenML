@@ -1,0 +1,2 @@
+def _wanmen_get_title_by_json_topic_part(json_content, tIndex, pIndex):
+    return '_'.join([json_content[0]['name'], json_content[0]['Topics'][tIndex]['name'], json_content[0]['Topics'][tIndex]['Parts'][pIndex]['name']])

@@ -1,0 +1,5 @@
+Processes DateTimes from the DB making sure it is always
+        returning UTC. Not using timezone.convert_to_utc as that
+        converts to configured TIMEZONE while the DB might be
+        running with some other setting. We assume UTC datetimes
+        in the database.

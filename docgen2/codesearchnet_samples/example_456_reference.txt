@@ -1,0 +1,11 @@
+Gets all attachments by name for the mail.
+
+        :param name: The name of the attachment to look for.
+        :type name: str
+        :param check_regex: Checks the name for a regular expression.
+        :type check_regex: bool
+        :param find_first: If set to True it will only find the first match and then quit.
+        :type find_first: bool
+        :returns: a list of tuples each containing name and payload
+                  where the attachments name matches the given name.
+        :rtype: list of tuple

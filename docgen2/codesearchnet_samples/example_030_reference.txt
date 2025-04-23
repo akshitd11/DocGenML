@@ -1,0 +1,1 @@
+Get (branch, commit) from HEAD of a git repo.

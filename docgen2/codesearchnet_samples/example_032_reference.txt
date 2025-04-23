@@ -1,0 +1,1 @@
+Get (width, height) of the current terminal.

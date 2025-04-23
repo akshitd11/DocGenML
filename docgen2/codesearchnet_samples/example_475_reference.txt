@@ -1,0 +1,11 @@
+Transfers a local file to the remote location.
+
+        If local_full_path_or_buffer is a string path, the file will be read
+        from that location; if it is a file-like buffer, the file will
+        be read from the buffer but not closed.
+
+        :param remote_full_path: full path to the remote file
+        :type remote_full_path: str
+        :param local_full_path_or_buffer: full path to the local file or a
+            file-like buffer
+        :type local_full_path_or_buffer: str or file-like buffer

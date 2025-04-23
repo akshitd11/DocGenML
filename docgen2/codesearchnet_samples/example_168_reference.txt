@@ -1,0 +1,3 @@
+Get the underlying `botocore.Credentials` object.
+
+        This contains the following authentication attributes: access_key, secret_key and token.

@@ -1,0 +1,7 @@
+This should be periodically called by the manager loop. This method will
+        kick off new processes to process DAG definition files and read the
+        results from the finished processors.
+
+        :return: a list of SimpleDags that were produced by processors that
+            have finished since the last time this was called
+        :rtype: list[airflow.utils.dag_processing.SimpleDag]

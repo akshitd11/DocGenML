@@ -1,0 +1,3 @@
+JSON, int, int, int->str
+    
+    Get a proper title with courseid+topicID+partID.

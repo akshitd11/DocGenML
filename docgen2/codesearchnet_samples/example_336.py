@@ -1,0 +1,4 @@
+def dagbag_report(self):
+    report = textwrap.dedent('\n\n        -------------------------------------------------------------------\n        DagBag loading stats for {dag_folder}\n        -------------------------------------------------------------------\n        Number of DAGs: {dag_num}\n        Total task number: {task_num}\n        DagBag parsing time: {duration}\n        {table}\n        ')
+    stats = self.dagbag_stats
+    return report.format(dag_folder=self.dag_folder, duration=sum([o.duration for o in stats]), dag_num=sum([o.dag_num for o in stats]), task_num=sum([o.task_num for o in stats]), table=pprinttable(stats))

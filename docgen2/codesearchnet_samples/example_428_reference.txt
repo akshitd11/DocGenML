@@ -1,0 +1,2 @@
+:return: a mapping between the subsystem name to the cgroup name
+        :rtype: dict[str, str]

@@ -1,0 +1,4 @@
+Gets the file including name and payload.
+
+        :returns: the part's name and payload.
+        :rtype: tuple

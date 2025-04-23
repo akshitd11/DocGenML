@@ -1,0 +1,7 @@
+Roll back a transaction.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/rest/v1/projects/rollback
+
+        :param transaction: the transaction to roll back.
+        :type transaction: str

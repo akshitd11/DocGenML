@@ -1,0 +1,9 @@
+Updates a transfer job that runs periodically.
+
+        :param job_name: (Required) Name of the job to be updated
+        :type job_name: str
+        :param body: A request body, as described in
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/transferJobs/patch#request-body
+        :type body: dict
+        :return: If successful, TransferJob.
+        :rtype: dict

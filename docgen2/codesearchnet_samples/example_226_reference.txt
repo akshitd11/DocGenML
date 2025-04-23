@@ -1,0 +1,12 @@
+Returns the current configuration as an OrderedDict of OrderedDicts.
+        :param display_source: If False, the option value is returned. If True,
+            a tuple of (option_value, source) is returned. Source is either
+            'airflow.cfg', 'default', 'env var', or 'cmd'.
+        :type display_source: bool
+        :param display_sensitive: If True, the values of options set by env
+            vars and bash commands will be displayed. If False, those options
+            are shown as '< hidden >'
+        :type display_sensitive: bool
+        :param raw: Should the values be output as interpolated values, or the
+            "raw" form that can be fed back in to ConfigParser
+        :type raw: bool

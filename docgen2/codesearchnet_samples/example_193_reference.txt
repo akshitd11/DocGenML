@@ -1,0 +1,5 @@
+:param file_path: the path to the file that's being processed
+        :type file_path: unicode
+        :return: the current runtime (in seconds) of the process that's
+            processing the specified file or None if the file is not currently
+            being processed

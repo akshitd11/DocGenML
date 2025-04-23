@@ -1,0 +1,8 @@
+Waits for the named operation to complete - checks status of the
+        asynchronous call.
+
+        :param operation_name: The name of the operation.
+        :type operation_name: str
+        :return: The response returned by the operation.
+        :rtype: dict
+        :exception: AirflowException in case error is returned.

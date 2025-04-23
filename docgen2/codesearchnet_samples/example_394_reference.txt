@@ -1,0 +1,1 @@
+Queries cassandra and returns a cursor to the results.

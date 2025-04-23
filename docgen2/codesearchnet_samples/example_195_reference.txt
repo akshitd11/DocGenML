@@ -1,0 +1,5 @@
+Update this with a new set of paths to DAG definition files.
+
+        :param new_file_paths: list of paths to DAG definition files
+        :type new_file_paths: list[unicode]
+        :return: None

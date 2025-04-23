@@ -1,0 +1,4 @@
+Determines the overall state of the DagRun based on the state
+        of its TaskInstances.
+
+        :return: State

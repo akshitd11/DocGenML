@@ -1,0 +1,2 @@
+Downloads a Sina video by its unique vid.
+    http://video.sina.com.cn/

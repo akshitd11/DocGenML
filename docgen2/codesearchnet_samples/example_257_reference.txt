@@ -1,0 +1,7 @@
+Given task instance, try_number, filename_template, return the rendered log
+    filename
+
+    :param ti: task instance
+    :param try_number: try_number of the task
+    :param filename_template: filename template, which can be jinja template or
+        python string template

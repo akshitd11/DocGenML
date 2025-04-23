@@ -1,0 +1,10 @@
+Utility function to perform an API call with retries
+
+        :param endpoint_info: Tuple of method and endpoint
+        :type endpoint_info: tuple[string, string]
+        :param json: Parameters for this API call.
+        :type json: dict
+        :return: If the api call returns a OK status code,
+            this function returns the response in JSON. Otherwise,
+            we throw an AirflowException.
+        :rtype: dict

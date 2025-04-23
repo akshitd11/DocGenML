@@ -1,0 +1,18 @@
+Export entities from Cloud Datastore to Cloud Storage for backup.
+
+        .. note::
+            Keep in mind that this requests the Admin API not the Data API.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/admin/rest/v1/projects/export
+
+        :param bucket: The name of the Cloud Storage bucket.
+        :type bucket: str
+        :param namespace: The Cloud Storage namespace path.
+        :type namespace: str
+        :param entity_filter: Description of what data from the project is included in the export.
+        :type entity_filter: dict
+        :param labels: Client-assigned labels.
+        :type labels: dict of str
+        :return: a resource operation instance.
+        :rtype: dict

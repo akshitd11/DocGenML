@@ -1,0 +1,12 @@
+Retrieves instance template by project_id and resource_id.
+        Must be called with keyword arguments rather than positional.
+
+        :param resource_id: Name of the instance template
+        :type resource_id: str
+        :param project_id: Optional, Google Cloud Platform project ID where the
+            Compute Engine Instance exists. If set to None or missing,
+            the default project_id from the GCP connection is used.
+        :type project_id: str
+        :return: Instance template representation as object according to
+            https://cloud.google.com/compute/docs/reference/rest/v1/instanceTemplates
+        :rtype: dict

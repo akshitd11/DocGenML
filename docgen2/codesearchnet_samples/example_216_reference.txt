@@ -1,0 +1,9 @@
+Kubernetes only supports lowercase alphanumeric characters and "-" and "." in
+        the pod name
+        However, there are special rules about how "-" and "." can be used so let's
+        only keep
+        alphanumeric chars  see here for detail:
+        https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
+
+        :param string: The requested Pod name
+        :return: ``str`` Pod name stripped of any unsafe characters
