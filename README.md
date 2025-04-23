@@ -115,6 +115,14 @@ Dependencies include:
 - `openai` (if using summarization)
 
 ---
+## ✅ Run Tests
+
+After making changes, you can run the test suite using:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
+---
 
 ## 📂 Project Structure
 
