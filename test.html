@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .params {
+            margin-left: 20px;
+        }
+        .param-name {
+            font-weight: bold;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation</h1>
+    
+    
+    <div class="item">
+        <h2>cli</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>cli</h2>
+        
+        
+        <div class="docstring">
+            docgen: generate docs &amp; summarize code
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>generate</h2>
+        
+        
+        <div class="docstring">
+            Generate docs from comments &amp; docstrings
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>summarize</h2>
+        
+        
+        <div class="docstring">
+            Summarize a .py or .ipynb file using OpenAI
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>full</h2>
+        
+        
+        <div class="docstring">
+            Generate docs for all .py files under SRC, summarize every .py and .ipynb there,&lt;br&gt;and write a single file to OUT in the specified format.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>config</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>formatter</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>BaseFormatter</h2>
+        
+        
+        <div class="docstring">
+            Base class for all formatters
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        <div class="docstring">
+            Convert parsed items into the target format
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>get_template</h2>
+        
+        
+        <div class="docstring">
+            Load a Jinja2 template from the templates directory
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>MarkdownFormatter</h2>
+        
+        
+        <div class="docstring">
+            Format parsed items as Markdown
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>HtmlFormatter</h2>
+        
+        
+        <div class="docstring">
+            Format parsed items as HTML
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>LaTeXFormatter</h2>
+        
+        
+        <div class="docstring">
+            Format parsed items as LaTeX
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>PDFFormatter</h2>
+        
+        
+        <div class="docstring">
+            Format parsed items as PDF (via ReportLab)
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>get_formatter</h2>
+        
+        
+        <div class="docstring">
+            Factory function to get the appropriate formatter
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>generator</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>MarkdownGenerator</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>render</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>parser</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>DocItem</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>extract_comments</h2>
+        
+        
+        <div class="docstring">
+            Map ending line number → collected comment block above it.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>parse_file</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>summarize</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>read_code_from_file</h2>
+        
+        
+        <div class="docstring">
+            Read a Python (.py) or Jupyter notebook (.ipynb) file and return its code as a single string.&lt;br&gt;- .py: returns the entire file.&lt;br&gt;- .ipynb: concatenates all code-cell sources, separated by blank lines.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>split_code_by_function_or_class</h2>
+        
+        
+        <div class="docstring">
+            Split the full code into top‑level chunks, each beginning with a `def ` or `class `.&lt;br&gt;Returns up to `max_chunks` segments to avoid overly long prompts.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>build_combined_prompt</h2>
+        
+        
+        <div class="docstring">
+            Build a single user prompt for the LLM by enumerating each chunk.&lt;br&gt;Prepends a header comment &#34;# Chunk i&#34; to each segment for clarity.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>summarize_code_file</h2>
+        
+        
+        <div class="docstring">
+            Orchestrates the full summarization:&lt;br&gt;  1. Reads code from the given file.&lt;br&gt;  2. Splits into manageable chunks.&lt;br&gt;  3. Builds a combined prompt.&lt;br&gt;  4. Calls the OpenAI API to get a summary.&lt;br&gt;  5. Returns the cleaned summary text.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>__init__</h2>
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of cli.py</h2>
+        
+        
+        <div class="docstring">
+            This codebase is a command-line tool for generating documentation from Python files, summarizing code files using OpenAI, and combining these summaries with generated documentation. It supports various output formats such as markdown, html, pdf, and latex. The tool can process individual files or directories containing Python (.py) and Jupyter notebook (.ipynb) files, generating docs for Python files, summarizing all files, and writing a combined output file in the specified format.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of config.py</h2>
+        
+        
+        <div class="docstring">
+            This code chunk loads environment variables from a .env file and sets default values for variables related to OpenAI API key, model, temperature, maximum tokens, and maximum code chunks.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of formatter.py</h2>
+        
+        
+        <div class="docstring">
+            The codebase consists of a document generation system with different formatters (Markdown, HTML, LaTeX, and PDF via ReportLab) that convert parsed items into specific formats. It includes a base formatter class with abstract methods, concrete formatter classes for each format, and a factory function to retrieve the appropriate formatter based on the desired output format. The formatters use Jinja2 templates for Markdown, HTML, and LaTeX formatting, while the PDF formatter creates PDF documents using ReportLab library.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of generator.py</h2>
+        
+        
+        <div class="docstring">
+            The code consists of a Markdown generator class that converts parsed documentation items into a Markdown format, categorizing them based on their type (module, class, function) and including comments and docstrings.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of parser.py</h2>
+        
+        
+        <div class="docstring">
+            The code chunks consist of a Python module for parsing and extracting documentation from source code files. It defines a `DocItem` class to represent documentation items, includes functions to extract comments and parse source files, and organizes the extracted information into a list of `DocItem` instances sorted by line numbers. The main purpose is to analyze source code files, extract documentation information, and organize it for further processing or documentation generation.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of summarize.py</h2>
+        
+        
+        <div class="docstring">
+            The code provided consists of functions to read code from Python or Jupyter notebook files, split the code into manageable chunks based on functions or classes, build a combined prompt for an AI assistant, and summarize the code using the OpenAI API. The main function, `summarize_code_file`, orchestrates these steps by reading code from a file, splitting it into chunks, creating a prompt, querying the OpenAI API, and returning the cleaned summary text. The purpose of the code is to automate the summarization of code files using artificial intelligence.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+    <div class="item">
+        <h2>Summary of __init__.py</h2>
+        
+        
+        <div class="docstring">
+            I&#39;m sorry, but you have not provided any code chunks for me to summarize. Please provide the code chunks you would like me to summarize.
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    
+</body>
+</html>

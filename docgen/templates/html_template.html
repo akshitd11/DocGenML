@@ -1,0 +1,72 @@
+{# templates/html_template.html #}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .params {
+            margin-left: 20px;
+        }
+        .param-name {
+            font-weight: bold;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation</h1>
+    
+    {% for item in items %}
+    <div class="item">
+        <h2>{{ item.name }}</h2>
+        
+        {% if item.docstring %}
+        <div class="docstring">
+            {{ item.docstring | replace('\n', '<br>') }}
+        </div>
+        {% endif %}
+        
+        {% if item.params %}
+        <h3>Parameters:</h3>
+        <ul class="params">
+        {% for param in item.params %}
+            <li><span class="param-name">{{ param.name }}</span>: {{ param.desc }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        
+        {% if item.returns %}
+        <h3>Returns:</h3>
+        <div class="returns">
+            {{ item.returns | replace('\n', '<br>') }}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</body>
+</html>
