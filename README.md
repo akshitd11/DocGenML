@@ -148,9 +148,3 @@ set OPENAI_API_KEY=your_key_here     # Windows
 ```
 
 ---
-
-## 📄 License
-
-MIT License
-
----
