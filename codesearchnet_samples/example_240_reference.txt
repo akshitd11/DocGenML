@@ -1,0 +1,4 @@
+Retrieves connection to Cloud Natural Language service.
+
+        :return: Cloud Natural Language service object
+        :rtype: google.cloud.language_v1.LanguageServiceClient

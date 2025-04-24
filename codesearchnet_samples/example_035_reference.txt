@@ -1,0 +1,6 @@
+str, str, str, bool, bool ->None
+
+    Download Acfun video by vid.
+
+    Call Acfun API, decide which site to use, and pass the job to its
+    extractor.

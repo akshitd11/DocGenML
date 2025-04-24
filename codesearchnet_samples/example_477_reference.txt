@@ -1,0 +1,4 @@
+Returns a datetime object representing the last time the file was modified
+
+        :param path: remote file path
+        :type path: string

@@ -1,0 +1,2 @@
+def download_file(self, local_path, remote_path, nthreads=64, overwrite=True, buffersize=4194304, blocksize=4194304):
+    multithread.ADLDownloader(self.connection, lpath=local_path, rpath=remote_path, nthreads=nthreads, overwrite=overwrite, buffersize=buffersize, blocksize=blocksize)

@@ -1,0 +1,12 @@
+Sends a single datapoint metric to DataDog
+
+        :param metric_name: The name of the metric
+        :type metric_name: str
+        :param datapoint: A single integer or float related to the metric
+        :type datapoint: int or float
+        :param tags: A list of tags associated with the metric
+        :type tags: list
+        :param type_: Type of your metric: gauge, rate, or count
+        :type type_: str
+        :param interval: If the type of the metric is rate or count, define the corresponding interval
+        :type interval: int

@@ -1,0 +1,2 @@
+Converts a map to a repeated RECORD that contains two fields: 'key' and 'value',
+        each will be converted to its corresponding data type in BQ.

@@ -1,11 +1,16 @@
-# docgen/cli.py
-
 import click
 from pathlib import Path
+import os
+import pandas as pd
+from nltk.translate.bleu_score import sentence_bleu
+from rouge import Rouge
+from bert_score import score
 
 from .parser import parse_file
 from .generator import MarkdownGenerator
 from .summarize import summarize_code_file
+
+rouge = Rouge()
 
 @click.group()
 def cli():
@@ -37,44 +42,68 @@ def summarize(file_path):
 @click.argument("src", type=click.Path(exists=True))
 @click.argument("out", type=click.Path())
 def full(src, out):
-    """
-    Generate Markdown docs for all .py files under SRC,
-    summarize every .py and .ipynb there, and write
-    a single Markdown file to OUT.
-    """
+    """Generate and summarize code into a single markdown"""
     src_path = Path(src)
-    # Gather all .py and .ipynb files
-    if src_path.is_dir():
-        py_files    = list(src_path.rglob("*.py"))
-        ipynb_files = list(src_path.rglob("*.ipynb"))
-        files = py_files + ipynb_files
-    else:
-        files = [src_path]
+    files = list(src_path.rglob("*.py")) + list(src_path.rglob("*.ipynb")) if src_path.is_dir() else [src_path]
 
-    # 1) Generate docs for .py files
     items = []
     for f in files:
         if f.suffix == ".py":
             items.extend(parse_file(f))
     md_docs = MarkdownGenerator().render(items)
 
-    # 2) Summarize each file
     summary_sections = []
     for f in files:
         summary_sections.append(f"## Summary of `{f.name}`\n")
         summary_sections.append(summarize_code_file(f))
 
-    # 3) Combine and write out
-    combined_md = (
-        md_docs
-        + "\n\n---\n\n"
-        + "\n\n".join(summary_sections)
-    )
+    combined_md = md_docs + "\n\n---\n\n" + "\n\n".join(summary_sections)
     Path(out).write_text(combined_md, encoding="utf-8", errors="ignore")
     click.echo(f"Docs and summaries written to {out}")
+
+def load_file(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return f.read().strip()
+
+def clean_markdown(md):
+    lines = [line for line in md.splitlines() if not line.startswith('#') and not line.startswith('---')]
+    return " ".join(lines).strip()
+
+def evaluate_files(reference_file, generated_file):
+    """Compare two markdown files and return BLEU, ROUGE-L, and BERTScore F1."""
+    if not os.path.exists(reference_file):
+        raise FileNotFoundError(f"Reference file not found: {reference_file}")
+    if not os.path.exists(generated_file):
+        raise FileNotFoundError(f"Generated file not found: {generated_file}")
+
+    reference = load_file(reference_file)
+    generated = clean_markdown(load_file(generated_file))
+
+    if not generated.strip():
+        raise ValueError("⚠️ Empty or invalid generated markdown after cleaning.")
+
+    bleu = sentence_bleu([reference.split()], generated.split())
+    rouge_score = rouge.get_scores(generated, reference)[0]["rouge-l"]["f"]
+    _, _, bert_f1 = score([generated], [reference], lang="en", verbose=False)
+
+    return pd.DataFrame([{
+        "BLEU": bleu,
+        "ROUGE-L": rouge_score,
+        "BERTScore F1": bert_f1.mean().item()
+    }])
+
+@cli.command()
+@click.argument("reference_file", type=click.Path(exists=True))
+@click.argument("generated_file", type=click.Path(exists=True))
+def evaluate(reference_file, generated_file):
+    """Evaluate a generated markdown file against a reference markdown file"""
+    try:
+        df = evaluate_files(reference_file, generated_file)
+        click.echo(df.to_markdown(index=False))
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
 
 if __name__ == "__main__":
     cli()
 
-# Alias for console‑script entry point
-main = cli
+main = cli  # for console entry point

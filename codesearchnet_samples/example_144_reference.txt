@@ -1,0 +1,1 @@
+Deletes an existing collection in the CosmosDB database.

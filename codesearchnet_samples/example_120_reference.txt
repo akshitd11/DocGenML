@@ -1,0 +1,9 @@
+Sets the environment variable `GOOGLE_APPLICATION_CREDENTIALS` with either:
+
+        - The path to the keyfile from the specified connection id
+        - A generated file's path if the user specified JSON in the connection id. The
+            file is assumed to be deleted after the process dies due to how mkstemp()
+            works.
+
+        The environment variable is used inside the gcloud command to determine correct
+        service account to use.

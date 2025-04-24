@@ -1,0 +1,2 @@
+Gets the epoch in the users timezone
+    :return:

@@ -1,0 +1,5 @@
+Return the try number that this task number will be when it is actually
+        run.
+
+        If the TI is currently running, this will match the column in the
+        databse, in all othercases this will be incremenetd

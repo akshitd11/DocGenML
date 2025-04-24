@@ -1,0 +1,2 @@
+Find zombie task instances, which are tasks haven't heartbeated for too long.
+        :return: Zombie task instances in SimpleTaskInstance format.

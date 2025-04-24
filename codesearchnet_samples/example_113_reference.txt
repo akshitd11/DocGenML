@@ -1,0 +1,5 @@
+A small helper function to convert a string to a numeric value
+    if appropriate
+
+    :param s: the string to be converted
+    :type s: str

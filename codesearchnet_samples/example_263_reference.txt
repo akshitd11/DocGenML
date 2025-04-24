@@ -1,0 +1,4 @@
+Handles the Airflow + Databricks lifecycle logic for a Databricks operator
+
+    :param operator: Databricks operator being handled
+    :param context: Airflow context

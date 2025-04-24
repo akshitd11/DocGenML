@@ -1,0 +1,9 @@
+Queries datadog for a specific metric, potentially with some
+        function applied to it and returns the results.
+
+        :param query: The datadog query to execute (see datadog docs)
+        :type query: str
+        :param from_seconds_ago: How many seconds ago to start querying for.
+        :type from_seconds_ago: int
+        :param to_seconds_ago: Up to how many seconds ago to query for.
+        :type to_seconds_ago: int

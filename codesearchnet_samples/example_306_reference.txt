@@ -1,0 +1,6 @@
+Builds an ingest query for an HDFS TSV load.
+
+        :param static_path: The path on hdfs where the data is
+        :type static_path: str
+        :param columns: List of all the columns that are available
+        :type columns: list

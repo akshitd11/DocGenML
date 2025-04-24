@@ -1,0 +1,7 @@
+Clears a set of task instances, but makes sure the running ones
+    get killed.
+
+    :param tis: a list of task instances
+    :param session: current session
+    :param activate_dag_runs: flag to check for active dag run
+    :param dag: DAG object

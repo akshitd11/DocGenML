@@ -1,0 +1,13 @@
+Waits until the job reaches the expected state.
+
+        :param job: Transfer job
+            See:
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/transferJobs#TransferJob
+        :type job: dict
+        :param expected_statuses: State that is expected
+            See:
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/transferOperations#Status
+        :type expected_statuses: set[str]
+        :param timeout:
+        :type timeout: time in which the operation must end in seconds
+        :rtype: None

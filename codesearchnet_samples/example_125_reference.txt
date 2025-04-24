@@ -1,0 +1,5 @@
+Checks the status code and raise an AirflowException exception on non 2XX or 3XX
+        status codes
+
+        :param response: A requests response object
+        :type response: requests.response

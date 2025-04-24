@@ -1,0 +1,6 @@
+Publish a message to a topic or an endpoint.
+
+        :param target_arn: either a TopicArn or an EndpointArn
+        :type target_arn: str
+        :param message: the default message you want to send
+        :param message: str

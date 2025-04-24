@@ -1,0 +1,1 @@
+Close and upload local log file to remote storage Wasb.

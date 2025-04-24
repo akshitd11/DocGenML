@@ -1,7 +1,5 @@
 # Module `cli`
 
-docgen/cli.py
-
 ---
 
 ### Function `cli`
@@ -22,7 +20,47 @@ Summarize a .py or .ipynb file using OpenAI
 
 ---
 
+### Function `full`
+
+Generate and summarize code into a single markdown
+
+---
+
+### Function `load_file`
+
+---
+
+### Function `clean_markdown`
+
+---
+
+### Function `evaluate_markdown`
+
+---
+
+### Function `evaluate`
+
+Evaluate generated markdown files against reference text
+
+---
+
 # Module `config`
+
+---
+
+# Module `evaluate`
+
+---
+
+### Function `load_file`
+
+---
+
+### Function `clean_markdown`
+
+---
+
+### Function `evaluate`
 
 ---
 
@@ -94,9 +132,3 @@ Orchestrates the full summarization:
   3. Builds a combined prompt.
   4. Calls the OpenAI API to get a summary.
   5. Returns the cleaned summary text.
-
----
-
-# Module `__init__`
-
----

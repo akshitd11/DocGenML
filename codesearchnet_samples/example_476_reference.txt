@@ -1,0 +1,4 @@
+Rename a file.
+
+        :param from_name: rename file from name
+        :param to_name: rename file to name

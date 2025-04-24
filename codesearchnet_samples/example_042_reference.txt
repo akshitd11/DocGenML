@@ -1,0 +1,2 @@
+Decompresses data for Content-Encoding: deflate.
+    (the zlib compression is used.)

@@ -1,0 +1,4 @@
+Check if bucket_name exists.
+
+        :param bucket_name: the name of the bucket
+        :type bucket_name: str

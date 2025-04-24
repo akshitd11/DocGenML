@@ -1,0 +1,11 @@
+Make an XCom available for tasks to pull.
+
+        :param key: A key for the XCom
+        :type key: str
+        :param value: A value for the XCom. The value is pickled and stored
+            in the database.
+        :type value: any pickleable object
+        :param execution_date: if provided, the XCom will not be visible until
+            this date. This can be used, for example, to send a message to a
+            task on a future date without it being immediately visible.
+        :type execution_date: datetime

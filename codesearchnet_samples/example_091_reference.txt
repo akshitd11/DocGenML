@@ -1,0 +1,3 @@
+Starts Cloud SQL Proxy.
+
+        You have to remember to stop the proxy if you started it!

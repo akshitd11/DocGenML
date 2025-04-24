@@ -1,0 +1,3 @@
+Converts a tuple to RECORD that contains n fields, each will be converted
+        to its corresponding data type in bq and will be named 'field_<index>', where
+        index is determined by the order of the tuple elements defined in cassandra.

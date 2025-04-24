@@ -1,0 +1,2 @@
+Inserts a single document into a mongo collection
+        https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.insert_one

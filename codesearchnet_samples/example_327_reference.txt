@@ -1,0 +1,26 @@
+Posts an event to datadog (processing finished, potentially alerts, other issues)
+        Think about this as a means to maintain persistence of alerts, rather than
+        alerting itself.
+
+        :param title: The title of the event
+        :type title: str
+        :param text: The body of the event (more information)
+        :type text: str
+        :param aggregation_key: Key that can be used to aggregate this event in a stream
+        :type aggregation_key: str
+        :param alert_type: The alert type for the event, one of
+            ["error", "warning", "info", "success"]
+        :type alert_type: str
+        :param date_happened: POSIX timestamp of the event; defaults to now
+        :type date_happened: int
+        :handle: User to post the event as; defaults to owner of the application key used
+            to submit.
+        :param handle: str
+        :param priority: Priority to post the event as. ("normal" or "low", defaults to "normal")
+        :type priority: str
+        :param related_event_id: Post event as a child of the given event
+        :type related_event_id: id
+        :param tags: List of tags to apply to the event
+        :type tags: list[str]
+        :param device_name: device_name to post the event with
+        :type device_name: list

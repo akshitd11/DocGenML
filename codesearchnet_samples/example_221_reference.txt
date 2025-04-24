@@ -1,0 +1,3 @@
+Expands (potentially nested) env vars by repeatedly applying
+    `expandvars` and `expanduser` until interpolation stops having
+    any effect.

@@ -1,0 +1,2 @@
+def get_vid_from_url(url):
+    return match1(url, 'youtu\\.be/([^?/]+)') or match1(url, 'youtube\\.com/embed/([^/?]+)') or match1(url, 'youtube\\.com/v/([^/?]+)') or match1(url, 'youtube\\.com/watch/([^/?]+)') or parse_query_param(url, 'v') or parse_query_param(parse_query_param(url, 'u'), 'v')

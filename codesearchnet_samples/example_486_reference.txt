@@ -1,0 +1,12 @@
+Validates if field is OK.
+
+        :param validation_spec: specification of the field
+        :type validation_spec: dict
+        :param dictionary_to_validate: dictionary where the field should be present
+        :type dictionary_to_validate: dict
+        :param parent: full path of parent field
+        :type parent: str
+        :param force_optional: forces the field to be optional
+            (all union fields have force_optional set to True)
+        :type force_optional: bool
+        :return: True if the field is present

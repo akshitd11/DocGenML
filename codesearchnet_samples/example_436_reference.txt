@@ -1,0 +1,6 @@
+Convert a column of a dataframe to UNIX timestamps if applicable
+
+        :param column: A Series object representing a column of a dataframe.
+        :type column: pd.Series
+        :return: a new series that maintains the same index as the original
+        :rtype: pd.Series

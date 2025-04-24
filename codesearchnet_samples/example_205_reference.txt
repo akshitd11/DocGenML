@@ -1,0 +1,8 @@
+Lists long-running operations in Google Storage Transfer
+        Service that match the specified filter.
+
+        :param filter: (Required) A request filter, as described in
+            https://cloud.google.com/storage-transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter
+        :type filter: dict
+        :return: List of Transfer Jobs
+        :rtype: list[dict]

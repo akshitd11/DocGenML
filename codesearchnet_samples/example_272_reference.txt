@@ -1,0 +1,8 @@
+Waits for the Job to reach a terminal state.
+
+        This method will periodically check the job state until the job reach
+        a terminal state.
+
+        Raises:
+            googleapiclient.errors.HttpError: if HTTP error is returned when getting
+            the job

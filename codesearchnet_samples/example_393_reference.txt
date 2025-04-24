@@ -1,0 +1,10 @@
+:param bucket: Name of the bucket in which you are going to delete object(s)
+        :type bucket: str
+        :param keys: The key(s) to delete from S3 bucket.
+
+            When ``keys`` is a string, it's supposed to be the key name of
+            the single object to delete.
+
+            When ``keys`` is a list, it's supposed to be the list of the
+            keys to delete.
+        :type keys: str or list

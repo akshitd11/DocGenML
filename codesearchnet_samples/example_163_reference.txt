@@ -1,0 +1,11 @@
+Pulls up to ``max_messages`` messages from Pub/Sub subscription.
+
+        :param project: the GCP project name or ID in which to create
+            the topic
+        :type project: str
+        :param subscription: the Pub/Sub subscription name to delete; do not
+            include the 'projects/{project}/topics/' prefix.
+        :type subscription: str
+        :param ack_ids: List of ReceivedMessage ackIds from a previous pull
+            response
+        :type ack_ids: list

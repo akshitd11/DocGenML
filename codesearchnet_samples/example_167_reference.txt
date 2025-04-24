@@ -1,0 +1,10 @@
+Parses a config file for s3 credentials. Can currently
+    parse boto, s3cmd.conf and AWS SDK config formats
+
+    :param config_file_name: path to the config file
+    :type config_file_name: str
+    :param config_format: config type. One of "boto", "s3cmd" or "aws".
+        Defaults to "boto"
+    :type config_format: str
+    :param profile: profile name in AWS type config file
+    :type profile: str

@@ -1,0 +1,10 @@
+Deletes a single document in a mongo collection.
+        https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.delete_one
+
+        :param mongo_collection: The name of the collection to delete from.
+        :type mongo_collection: str
+        :param filter_doc: A query that matches the document to delete.
+        :type filter_doc: dict
+        :param mongo_db: The name of the database to use.
+            Can be omitted; then the database from the connection string is used.
+        :type mongo_db: str

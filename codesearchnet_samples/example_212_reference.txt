@@ -1,0 +1,5 @@
+Resumes an transfer operation in Google Storage Transfer Service.
+
+        :param operation_name: (Required) Name of the transfer operation.
+        :type operation_name: str
+        :rtype: None

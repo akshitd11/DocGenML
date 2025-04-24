@@ -1,0 +1,7 @@
+Read logs of given task instance from local machine.
+        :param task_instance: task instance object
+        :param try_number: task instance try_number to read logs from. If None
+                           it returns all logs separated by try_number
+        :param metadata: log metadata,
+                         can be used for steaming log reading and auto-tailing.
+        :return: a list of logs

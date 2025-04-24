@@ -1,0 +1,13 @@
+Upload a file to Azure File Share.
+
+        :param file_path: Path to the file to load.
+        :type file_path: str
+        :param share_name: Name of the share.
+        :type share_name: str
+        :param directory_name: Name of the directory.
+        :type directory_name: str
+        :param file_name: Name of the file.
+        :type file_name: str
+        :param kwargs: Optional keyword arguments that
+            `FileService.create_file_from_path()` takes.
+        :type kwargs: object

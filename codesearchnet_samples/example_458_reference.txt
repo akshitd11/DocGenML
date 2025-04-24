@@ -1,0 +1,1 @@
+Write batch records to Kinesis Firehose

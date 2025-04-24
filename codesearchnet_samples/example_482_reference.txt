@@ -1,0 +1,9 @@
+Set the dag run for a specific execution date and its running task instances
+    to failed.
+    :param dag: the DAG of which to alter state
+    :param execution_date: the execution date from which to start looking
+    :param commit: commit DAG and tasks to be altered to the database
+    :param session: database session
+    :return: If commit is true, list of tasks that have been updated,
+             otherwise list of tasks that will be updated
+    :raises: AssertionError if dag or execution_date is invalid

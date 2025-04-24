@@ -1,0 +1,4 @@
+Use multiple processes to parse and generate tasks for the
+        DAGs in parallel. By processing them in separate processes,
+        we can get parallelism and isolation from potentially harmful
+        user code.

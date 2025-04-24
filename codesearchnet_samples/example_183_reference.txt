@@ -1,0 +1,2 @@
+Terminate (and then kill) the manager process launched.
+        :return:

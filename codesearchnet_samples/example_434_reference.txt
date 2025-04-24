@@ -1,0 +1,6 @@
+Get a list of all available fields for an object.
+
+        :param obj: The name of the Salesforce object that we are getting a description of.
+        :type obj: str
+        :return: the names of the fields.
+        :rtype: list of str

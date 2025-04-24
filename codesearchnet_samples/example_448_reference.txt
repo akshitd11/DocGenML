@@ -1,0 +1,12 @@
+Updates a single document in a mongo collection.
+        https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.update_one
+
+        :param mongo_collection: The name of the collection to update.
+        :type mongo_collection: str
+        :param filter_doc: A query that matches the documents to update.
+        :type filter_doc: dict
+        :param update_doc: The modifications to apply.
+        :type update_doc: dict
+        :param mongo_db: The name of the database to use.
+            Can be omitted; then the database from the connection string is used.
+        :type mongo_db: str

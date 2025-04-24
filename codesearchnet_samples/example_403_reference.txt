@@ -1,0 +1,1 @@
+Call the SparkSqlHook to run the provided sql query

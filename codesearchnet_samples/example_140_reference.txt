@@ -1,0 +1,1 @@
+Creates a new collection in the CosmosDB database.

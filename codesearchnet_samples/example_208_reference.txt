@@ -1,0 +1,5 @@
+Cancels an transfer operation in Google Storage Transfer Service.
+
+        :param operation_name: Name of the transfer operation.
+        :type operation_name: str
+        :rtype: None

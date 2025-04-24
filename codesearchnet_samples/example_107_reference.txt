@@ -1,0 +1,1 @@
+Print operational metrics for the scheduler test.

@@ -1,0 +1,1 @@
+Returns a JSON with a task's public instance variables.

@@ -1,0 +1,10 @@
+Deletes a Pub/Sub topic if it exists.
+
+        :param project: the GCP project ID in which to delete the topic
+        :type project: str
+        :param topic: the Pub/Sub topic name to delete; do not
+            include the ``projects/{project}/topics/`` prefix.
+        :type topic: str
+        :param fail_if_not_exists: if set, raise an exception if the topic
+            does not exist
+        :type fail_if_not_exists: bool

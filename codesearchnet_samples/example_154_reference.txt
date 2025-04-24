@@ -1,0 +1,10 @@
+Uploads zip file with sources.
+
+        :param location: The location where the function is created.
+        :type location: str
+        :param zip_path: The path of the valid .zip file to upload.
+        :type zip_path: str
+        :param project_id: Optional, Google Cloud Project project_id where the function belongs.
+            If set to None or missing, the default project_id from the GCP connection is used.
+        :type project_id: str
+        :return: The upload URL that was returned by generateUploadUrl method.

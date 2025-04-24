@@ -1,0 +1,1 @@
+Extracts video ID from live.qq.com.

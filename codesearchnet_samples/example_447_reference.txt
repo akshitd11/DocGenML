@@ -1,0 +1,2 @@
+Inserts many docs into a mongo collection.
+        https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.insert_many

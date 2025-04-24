@@ -1,0 +1,1 @@
+Get a pandas dataframe from a sql query.

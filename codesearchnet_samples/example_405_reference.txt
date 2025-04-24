@@ -1,0 +1,7 @@
+Template method that contains custom logic of reading
+        logs given the try_number.
+        :param ti: task instance record
+        :param try_number: current try_number to read log from
+        :param metadata: log metadata,
+                         can be used for steaming log reading and auto-tailing.
+        :return: log message as a string and metadata.

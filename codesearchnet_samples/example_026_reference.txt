@@ -1,0 +1,2 @@
+str->dict
+    Information for CKPlayer API content.

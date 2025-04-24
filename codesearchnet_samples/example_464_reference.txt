@@ -1,0 +1,11 @@
+Check if a prefix exists on Azure Blob storage.
+
+        :param container_name: Name of the container.
+        :type container_name: str
+        :param prefix: Prefix of the blob.
+        :type prefix: str
+        :param kwargs: Optional keyword arguments that
+            `BlockBlobService.list_blobs()` takes.
+        :type kwargs: object
+        :return: True if blobs matching the prefix exist, False otherwise.
+        :rtype: bool

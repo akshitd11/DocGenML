@@ -1,0 +1,20 @@
+Reads a key with S3 Select.
+
+        :param key: S3 key that will point to the file
+        :type key: str
+        :param bucket_name: Name of the bucket in which the file is stored
+        :type bucket_name: str
+        :param expression: S3 Select expression
+        :type expression: str
+        :param expression_type: S3 Select expression type
+        :type expression_type: str
+        :param input_serialization: S3 Select input data serialization format
+        :type input_serialization: dict
+        :param output_serialization: S3 Select output data serialization format
+        :type output_serialization: dict
+        :return: retrieved subset of original data by S3 Select
+        :rtype: str
+
+        .. seealso::
+            For more details about S3 Select parameters:
+            http://boto3.readthedocs.io/en/latest/reference/services/s3.html#S3.Client.select_object_content

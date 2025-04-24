@@ -1,0 +1,1 @@
+Transforms a SQLAlchemy model instance into a dictionary

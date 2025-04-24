@@ -1,0 +1,3 @@
+Get the very latest state from the database, if a session is passed,
+        we use and looking up the state becomes part of the session, otherwise
+        a new session is used.

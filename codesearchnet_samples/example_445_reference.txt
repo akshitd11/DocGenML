@@ -1,0 +1,2 @@
+Runs a mongo find query and returns the results
+        https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.find

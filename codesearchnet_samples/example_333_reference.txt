@@ -1,0 +1,7 @@
+Fail given zombie tasks, which are tasks that haven't
+        had a heartbeat for too long, in the current DagBag.
+
+        :param zombies: zombie task instances to kill.
+        :type zombies: airflow.utils.dag_processing.SimpleTaskInstance
+        :param session: DB session.
+        :type session: sqlalchemy.orm.session.Session

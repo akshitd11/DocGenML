@@ -1,0 +1,4 @@
+Returns http session for use with requests
+
+        :param headers: additional headers to be passed through as a dictionary
+        :type headers: dict

@@ -1,0 +1,1 @@
+Returns version of the Cloud SQL Proxy.

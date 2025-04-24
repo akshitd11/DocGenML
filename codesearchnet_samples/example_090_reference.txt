@@ -1,0 +1,8 @@
+Waits for the named operation to complete - checks status of the
+        asynchronous call.
+
+        :param project_id: Project ID of the project that contains the instance.
+        :type project_id: str
+        :param operation_name: Name of the operation.
+        :type operation_name: str
+        :return: None

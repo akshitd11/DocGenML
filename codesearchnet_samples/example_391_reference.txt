@@ -1,0 +1,14 @@
+Loads a file object to S3
+
+        :param file_obj: The file-like object to set as the content for the S3 key.
+        :type file_obj: file-like object
+        :param key: S3 key that will point to the file
+        :type key: str
+        :param bucket_name: Name of the bucket in which to store the file
+        :type bucket_name: str
+        :param replace: A flag that indicates whether to overwrite the key
+            if it already exists.
+        :type replace: bool
+        :param encrypt: If True, S3 encrypts the file on the server,
+            and the file is stored in encrypted form at rest in S3.
+        :type encrypt: bool

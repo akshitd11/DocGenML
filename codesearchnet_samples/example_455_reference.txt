@@ -1,0 +1,20 @@
+Downloads mail's attachments in the mail folder by its name to the local directory.
+
+        :param name: The name of the attachment that will be downloaded.
+        :type name: str
+        :param local_output_directory: The output directory on the local machine
+                                       where the files will be downloaded to.
+        :type local_output_directory: str
+        :param mail_folder: The mail folder where to look at.
+        :type mail_folder: str
+        :param check_regex: Checks the name for a regular expression.
+        :type check_regex: bool
+        :param latest_only: If set to True it will only download
+                            the first matched attachment.
+        :type latest_only: bool
+        :param not_found_mode: Specify what should happen if no attachment has been found.
+                               Supported values are 'raise', 'warn' and 'ignore'.
+                               If it is set to 'raise' it will raise an exception,
+                               if set to 'warn' it will only print a warning and
+                               if set to 'ignore' it won't notify you at all.
+        :type not_found_mode: str

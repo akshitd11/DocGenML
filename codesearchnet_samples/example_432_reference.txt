@@ -1,0 +1,6 @@
+Make a query to Salesforce.
+
+        :param query: The query to make to Salesforce.
+        :type query: str
+        :return: The query result.
+        :rtype: dict

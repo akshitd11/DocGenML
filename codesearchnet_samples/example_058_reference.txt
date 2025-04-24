@@ -1,0 +1,4 @@
+returns aws_access_key_id, aws_secret_access_key
+        from extra
+
+        intended to be used by external import and export statements

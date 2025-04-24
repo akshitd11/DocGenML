@@ -1,0 +1,6 @@
+Print out stats about how files are getting processed.
+
+        :param known_file_paths: a list of file paths that may contain Airflow
+            DAG definitions
+        :type known_file_paths: list[unicode]
+        :return: None

@@ -1,0 +1,6 @@
+Returns the Cloud Function with the given name.
+
+        :param name: Name of the function.
+        :type name: str
+        :return: A Cloud Functions object representing the function.
+        :rtype: dict

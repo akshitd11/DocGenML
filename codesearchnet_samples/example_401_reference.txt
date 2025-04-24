@@ -1,0 +1,4 @@
+Retrieves connection to Cloud Speech.
+
+        :return: Google Cloud Speech client object.
+        :rtype: google.cloud.speech_v1.SpeechClient

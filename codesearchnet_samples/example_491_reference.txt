@@ -1,0 +1,11 @@
+Return the list of directories and files stored on a Azure File Share.
+
+        :param share_name: Name of the share.
+        :type share_name: str
+        :param directory_name: Name of the directory.
+        :type directory_name: str
+        :param kwargs: Optional keyword arguments that
+            `FileService.list_directories_and_files()` takes.
+        :type kwargs: object
+        :return: A list of files and directories
+        :rtype: list

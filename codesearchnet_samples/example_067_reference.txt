@@ -1,0 +1,1 @@
+Returns a mysql connection object

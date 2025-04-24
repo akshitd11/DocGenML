@@ -1,0 +1,11 @@
+This function finds the date in a list closest to the target date.
+    An optional parameter can be given to get the closest before or after.
+
+    :param target_dt: The target date
+    :type target_dt: datetime.date
+    :param date_list: The list of dates to search
+    :type date_list: list[datetime.date]
+    :param before_target: closest before or after the target
+    :type before_target: bool or None
+    :returns: The closest date
+    :rtype: datetime.date or None

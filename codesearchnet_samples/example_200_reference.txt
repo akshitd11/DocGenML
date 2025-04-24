@@ -1,0 +1,2 @@
+Kill all child processes on exit since we don't want to leave
+        them as orphaned.

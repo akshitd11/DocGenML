@@ -1,0 +1,7 @@
+Check whether a potential object is a subclass of
+    the AirflowPlugin class.
+
+    :param plugin_obj: potential subclass of AirflowPlugin
+    :param existing_plugins: Existing list of AirflowPlugin subclasses
+    :return: Whether or not the obj is a valid subclass of
+        AirflowPlugin

@@ -1,0 +1,1 @@
+Insert a list of new documents into an existing collection in the CosmosDB database.

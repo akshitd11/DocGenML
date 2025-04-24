@@ -1,0 +1,1 @@
+Extract error code from ftp exception

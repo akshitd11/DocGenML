@@ -1,0 +1,3 @@
+poke for a non empty directory
+
+        :return: Bool depending on the search criteria

@@ -1,0 +1,1 @@
+Delete an existing document out of a collection in the CosmosDB database.

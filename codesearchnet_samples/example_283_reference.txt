@@ -1,0 +1,3 @@
+Creates a new instance of the named executor.
+    In case the executor name is not know in airflow,
+    look for it in the plugins

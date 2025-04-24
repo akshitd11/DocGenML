@@ -1,0 +1,2 @@
+Sync metadata from stat queue and only keep the latest stat.
+        :return:

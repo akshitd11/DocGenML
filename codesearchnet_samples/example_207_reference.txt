@@ -1,0 +1,12 @@
+Deletes a transfer job. This is a soft delete. After a transfer job is
+        deleted, the job and all the transfer executions are subject to garbage
+        collection. Transfer jobs become eligible for garbage collection
+        30 days after soft delete.
+
+        :param job_name: (Required) Name of the job to be deleted
+        :type job_name: str
+        :param project_id: (Optional) the ID of the project that owns the Transfer
+            Job. If set to None or missing, the default project_id from the GCP
+            connection is used.
+        :type project_id: str
+        :rtype: None

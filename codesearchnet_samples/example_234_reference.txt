@@ -1,0 +1,9 @@
+Deletes the long-running operation.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/data/rest/v1/projects.operations/delete
+
+        :param name: the name of the operation resource.
+        :type name: str
+        :return: none if successful.
+        :rtype: dict

@@ -1,0 +1,13 @@
+If the airflow scheduler restarts with pending "Queued" tasks, the tasks may or
+        may not
+        have been launched Thus, on starting up the scheduler let's check every
+        "Queued" task to
+        see if it has been launched (ie: if there is a corresponding pod on kubernetes)
+
+        If it has been launched then do nothing, otherwise reset the state to "None" so
+        the task
+        will be rescheduled
+
+        This will not be necessary in a future version of airflow in which there is
+        proper support
+        for State.LAUNCHED

@@ -1,0 +1,15 @@
+This function finds the date in a list closest to the target date.
+    An optional parameter can be given to get the closest before or after.
+
+    :param table: A hive table name
+    :type table: str
+    :param ds: A datestamp ``%Y-%m-%d`` e.g. ``yyyy-mm-dd``
+    :type ds: list[datetime.date]
+    :param before: closest before (True), after (False) or either side of ds
+    :type before: bool or None
+    :returns: The closest date
+    :rtype: str or None
+
+    >>> tbl = 'airflow.static_babynames_partitioned'
+    >>> closest_ds_partition(tbl, '2015-01-02')
+    '2015-01-01'

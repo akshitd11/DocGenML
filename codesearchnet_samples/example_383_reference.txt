@@ -1,0 +1,6 @@
+Returns a boto3.s3.Object
+
+        :param key: the path to the key
+        :type key: str
+        :param bucket_name: the name of the bucket
+        :type bucket_name: str

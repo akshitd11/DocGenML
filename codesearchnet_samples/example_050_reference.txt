@@ -1,0 +1,4 @@
+int->None
+    
+    Download a WHOLE course.
+    Reuse the API call to save time.

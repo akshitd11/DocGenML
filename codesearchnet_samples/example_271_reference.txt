@@ -1,0 +1,7 @@
+Gets a MLEngine job based on the job name.
+
+        :return: MLEngine job object if succeed.
+        :rtype: dict
+
+        Raises:
+            googleapiclient.errors.HttpError: if HTTP error is returned from server

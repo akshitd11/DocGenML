@@ -1,0 +1,7 @@
+Begins a new transaction.
+
+        .. seealso::
+            https://cloud.google.com/datastore/docs/reference/rest/v1/projects/beginTransaction
+
+        :return: a transaction handle.
+        :rtype: str

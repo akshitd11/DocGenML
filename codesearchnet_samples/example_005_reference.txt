@@ -1,0 +1,1 @@
+Downloads Dailymotion videos by URL.

@@ -1,0 +1,9 @@
+Load AirflowPlugin subclasses from the entrypoints
+    provided. The entry_point group should be 'airflow.plugins'.
+
+    :param entry_points: A collection of entrypoints to search for plugins
+    :type entry_points: Generator[setuptools.EntryPoint, None, None]
+    :param airflow_plugins: A collection of existing airflow plugins to
+        ensure we don't load duplicates
+    :type airflow_plugins: list[type[airflow.plugins_manager.AirflowPlugin]]
+    :rtype: list[airflow.plugins_manager.AirflowPlugin]

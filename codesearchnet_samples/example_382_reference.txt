@@ -1,0 +1,6 @@
+Checks if a key exists in a bucket
+
+        :param key: S3 key that will point to the file
+        :type key: str
+        :param bucket_name: Name of the bucket in which the file is stored
+        :type bucket_name: str

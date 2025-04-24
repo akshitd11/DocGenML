@@ -1,7 +1,5 @@
 # Module `cli`
 
-docgen/cli.py
-
 ---
 
 ### Function `cli`
@@ -24,13 +22,45 @@ Summarize a .py or .ipynb file using OpenAI
 
 ### Function `full`
 
-Generate Markdown docs for all .py files under SRC,
-summarize every .py and .ipynb there, and write
-a single Markdown file to OUT.
+Generate and summarize code into a single markdown
+
+---
+
+### Function `load_file`
+
+---
+
+### Function `clean_markdown`
+
+---
+
+### Function `evaluate_markdown`
+
+---
+
+### Function `evaluate`
+
+Evaluate generated markdown files against reference text
 
 ---
 
 # Module `config`
+
+---
+
+# Module `evaluate`
+
+---
+
+### Function `load_file`
+
+---
+
+### Function `clean_markdown`
+
+---
+
+### Function `evaluate`
 
 ---
 
@@ -115,29 +145,34 @@ Orchestrates the full summarization:
 ## Summary of `cli.py`
 
 
-The codebase is a command-line tool for generating Markdown documentation from Python files and summarizing their contents using OpenAI. It consists of commands for generating docs, summarizing individual files, and creating a combined Markdown file with docs and summaries for multiple files.
+This codebase is a command-line utility for generating Markdown documentation from Python files, summarizing code using OpenAI, and evaluating the generated Markdown against reference text. It includes commands for generating documentation, summarizing code, combining documentation and summaries, cleaning Markdown text, and evaluating Markdown files. The utility uses libraries like click, pandas, nltk, rouge, and bert_score for various tasks.
 
 ## Summary of `config.py`
 
 
-This code chunk loads environment variables from a .env file and assigns default values to variables related to OpenAI API key, model, temperature, maximum tokens, and maximum code chunks.
+This code chunk imports necessary modules, loads environment variables from a .env file, and sets default values for variables related to OpenAI API key, model, temperature, max tokens, and maximum code chunks allowed.
+
+## Summary of `evaluate.py`
+
+
+The code snippets consist of functions and imports used for evaluating the quality of generated markdown files against reference texts. The code involves loading files, cleaning markdown content, and calculating evaluation metrics such as BLEU, ROUGE-L, and BERTScore F1 for each pair of reference and generated markdown files.
 
 ## Summary of `generator.py`
 
 
-The code defines a MarkdownGenerator class that generates Markdown documentation for items like modules, classes, and functions based on their type, name, comments, and docstrings.
+The code consists of a markdown generator class that takes a list of DocItem objects and renders them into markdown format, including headers based on the item type, comments, and docstrings.
 
 ## Summary of `parser.py`
 
 
-The code snippets define a Python module for parsing code files to extract documentation items like module, class, and function definitions along with their docstrings and leading comments. The `parse_file` function reads a file, extracts comments, and uses abstract syntax trees to identify and collect relevant information about module, class, and function definitions before returning a sorted list of `DocItem` instances.
+The codebase consists of a Python module for parsing source code files to extract documentation items such as module, class, and function definitions along with their associated docstrings and comments. It includes functions for extracting comments, parsing source files, and generating structured documentation items from the code.
 
 ## Summary of `summarize.py`
 
 
-The provided code snippets form a system that reads Python code from files, splits the code into manageable chunks based on functions or classes, creates a combined prompt for an AI model, queries the OpenAI API to summarize the code, and returns the cleaned summary text. The system utilizes various functions such as reading code from files, splitting code into chunks, building prompts, and interacting with the OpenAI ChatCompletion endpoint to generate summaries of codebases.
+The code provided includes functions to read code from Python or Jupyter notebook files, split the code into chunks based on functions or classes, build a combined prompt for a language model, and summarize code files using the OpenAI API. The `summarize_code_file` function orchestrates the entire process by handling file reading, chunking, prompt creation, API querying, and returning the cleaned summary text. This codebase aims to automate the summarization of code files by leveraging OpenAI's language model capabilities.
 
 ## Summary of `__init__.py`
 
 
-I'm sorry, but you haven't provided any code chunks for me to summarize. Please provide the code you'd like me to summarize.
+I'm sorry, but you have not provided any code chunks for me to summarize. Could you please provide the code chunks so that I can assist you in summarizing them?

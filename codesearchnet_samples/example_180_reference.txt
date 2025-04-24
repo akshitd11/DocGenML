@@ -1,0 +1,2 @@
+Heartbeat DAG file processor and start it if it is not alive.
+        :return:

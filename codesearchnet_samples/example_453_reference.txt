@@ -1,0 +1,10 @@
+Checks the mail folder for mails containing attachments with the given name.
+
+        :param name: The name of the attachment that will be searched for.
+        :type name: str
+        :param mail_folder: The mail folder where to look at.
+        :type mail_folder: str
+        :param check_regex: Checks the name for a regular expression.
+        :type check_regex: bool
+        :returns: True if there is an attachment with the given name and False if not.
+        :rtype: bool

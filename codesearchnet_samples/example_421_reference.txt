@@ -1,0 +1,2 @@
+Upload all of the file splits (and optionally the schema .json file) to
+        Google cloud storage.
